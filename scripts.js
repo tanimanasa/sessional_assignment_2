@@ -15,6 +15,7 @@ xhr.onreadystatechange = () => {
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h3 class="card-title">${response[i].name}</h3>
+                    <h5 class="card-title">${response[i].id}</h5>
                     <h5 class="card-title">${response[i].username}</h5>
                     <h5 class="card-title">${response[i].email}</h5>
                     <h5 class="card-title">${response[i].phone}</h5>
