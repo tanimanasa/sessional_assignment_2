@@ -12,13 +12,14 @@ xhr.onreadystatechange = () => {
         let template = '';
         for(let i=0; i<response.length; i++){
             template += `
-            <div class="content">
-                <h3 class="card_header">${response[i].name}</h3>
-                <p class="card_header">${response[i].username}</p>
-                <p class="card_header">${response[i].email}</p>
-                
-                <p class="card_footer">${response[i].phone}</p>
-                <p class="card_footer">${response[i].website}</p>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">${response[i].name}</h3>
+                    <h5 class="card-title">${response[i].username}</h5>
+                    <h5 class="card-title">${response[i].email}</h5>
+                    <h5 class="card-title">${response[i].phone}</h5>
+                    <h5 class="card-title">${response[i].website}</h5>
+                </div>
             </div>`;
         }
         document.querySelector('#my-container').innerHTML = template

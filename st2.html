@@ -13,11 +13,12 @@
 <body>
     <header>
         
-        <a href="#" class="logo"><img style="width: 10%;" src="./logo.png" alt=""></a>
+        <a href="#" class="logo"><img style="width: 25%;" src="./logo.png" alt=""></a>
+        <h1 id="heading_personal">PERSONAL MANAGEMENT APPLICATION</h1>
         <ul class="navigation" >
             
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contactus">Add new blogs</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Help</a></li>
             <li><div id="abc" class="search">
@@ -25,7 +26,7 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div></li>
         </ul>
-
+        
         
     </header>
 
@@ -34,9 +35,38 @@
     </div>
 
     <div class="container">
-        <div id="my-container" style="display: flex; flex-wrap: wrap;"></div>
+        <h1 id="person_details">Person's Details</h1>
+        <div id="my-container"></div>
     </div>
     
+    <section id="contactus">
+        <h1 class="headings" style="align-items:center">ADD NEW BLOGS</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Write whatever you feel here..! :) "></textarea>
+            <input type="submit" value="POST" id="send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+      </div>
+      <h2>Connect with us here..!</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+
     <script src="https://kit.fontawesome.com/398eee00bd.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
